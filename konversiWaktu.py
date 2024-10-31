@@ -1,3 +1,5 @@
+#BISMA GYNDARA MAGES JAYALANGIT
+
 waktu = input('masukan hari/jam/menit/detik:')
 nilaiWaktu = int(input('masukan nilai waktu:'))
 
