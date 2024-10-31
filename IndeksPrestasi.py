@@ -1,3 +1,5 @@
+#BISMA GYNDARA MAGES JAYALANGIT
+
 Nim      = input('Masukan NIM                    :')
 Nama     = input('Masukan Nama                   :')
 Kelas    = input('Masukan Kelas                  :')
