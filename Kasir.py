@@ -1,3 +1,5 @@
+#BISMA GYNDARA MAGES JAYALANGIT
+
 print('____________________________________________')
 print('|__________KASIIR PENJUALAN KANTIN_________|')
 print('|_______Nama barang________|_____Harga_____|')
