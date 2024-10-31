@@ -1,3 +1,4 @@
+#BISMA GYNDARA MAGES JAYALANGIT
 
 NilaiDetik = int(input('Masukan Nilai Detik'))
 
