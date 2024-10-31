@@ -1,3 +1,5 @@
+#BISMA GYNDARA MAGES JAYALANGIT
+
 print('       <<<<<< Biaya Parkir >>>>>>>>')
 JenisKendaraan = input('Masukan jenis Kendaraan  : ')
 NoPol          = input('Masukan No Polisi        : ')
