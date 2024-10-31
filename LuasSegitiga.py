@@ -1,3 +1,5 @@
+#BISMA GYNDARA MAGES JAYALANGIT
+
 a= input('masukan alas:')
 b= input('masukan tinggi:')
 c= float(a)
