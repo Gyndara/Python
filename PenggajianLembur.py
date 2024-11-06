@@ -27,7 +27,7 @@ if (LamaBekerja > 40):
 GajiUtama = TotalGaji - GajiLembur
 
 #menampilkan lama bekerja dan total gaji yang didapat
-print('  <<<< TOTAL GAJI KARYAWAN >>>>')
+print('  <<<< TOTAL GAJI KARYAWAN SELAMA SATU MINGGU >>>>')
 print('NAMA KARYAWAN :', NamaKaryawan)
 print('LAMA BEKERJA  :', LamaBekerja, ' JAM')
 print('LAMA LEMBUR   :', JamLembur, '  JAM')
