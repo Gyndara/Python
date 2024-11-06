@@ -5,7 +5,8 @@ import os
 
 #badan program
 #memasukan lama bekerja
-LamaBekerja = int(input('LAMA JAM BEKERJA : '))
+NamaKaryawan = input('MASUKAN NAMA     : ')
+LamaBekerja  = int(input('LAMA JAM BEKERJA : '))
 os.system('pause')
 os.system('cls')
 UpahPerjam = 150000
@@ -27,8 +28,9 @@ GajiUtama = TotalGaji - GajiLembur
 
 #menampilkan lama bekerja dan total gaji yang didapat
 print('  <<<< TOTAL GAJI KARYAWAN >>>>')
-print('LAMA BEKERJA : ', LamaBekerja, ' JAM')
-print('LAMA LEMBUR  : ', JamLembur, '  JAM')
-print(f'GAJI BERSIH  : Rp.{GajiUtama:,.0f}')
-print(f'GAJI LEMBUR  : Rp.{GajiLembur:,.0f}')
-print(f'TOTAL GAJI   : Rp.{TotalGaji:,.0f}')
+print('NAMA KARYAWAN :', NamaKaryawan)
+print('LAMA BEKERJA  :', LamaBekerja, ' JAM')
+print('LAMA LEMBUR   :', JamLembur, '  JAM')
+print(f'GAJI BERSIH   : Rp.{GajiUtama:,.0f}')
+print(f'GAJI LEMBUR   : Rp.{GajiLembur:,.0f}')
+print(f'TOTAL GAJI    : Rp.{TotalGaji:,.0f}')
