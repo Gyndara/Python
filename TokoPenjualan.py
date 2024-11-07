@@ -25,7 +25,7 @@ Diskon = 0
 StatusDiskon = 'T'
 
 # Meminta input diskon jika jumlah produk >= 12
-if (JumlahProduk >= 12):
+if (JumlahProduk >= 20):
     StatusDiskon = input('Ada Diskon [Ya/Tidak] : ').upper()
 
 # Jika ada diskon
