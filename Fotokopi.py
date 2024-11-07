@@ -9,9 +9,6 @@ if langganan != 'Y' and langganan != 'T':
 else:
     print(f'Pilihan Anda: {langganan}')
 
-os.system('pause')
-os.system('cls')
-
 #memasukan jumlah lembar fotokopi
 jumlah = int(input('Jumlah lembar fotokopi : '))
 
