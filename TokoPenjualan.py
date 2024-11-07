@@ -28,8 +28,6 @@ StatusDiskon = 'Tidak'
 if (JumlahProduk >= 12):
     StatusDiskon = input('Ada Diskon [Ya/Tidak] : ').upper()
 
-print(StatusDiskon)
-
 # Jika ada diskon
 if (StatusDiskon == 'Y'):
     Diskon = int(input('Besar Diskon : '))
