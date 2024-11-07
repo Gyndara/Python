@@ -22,7 +22,7 @@ else:
 JumlahProduk = int(input('Masukan Jumlah produk : '))
 
 Diskon = 0
-StatusDiskon = 'Tidak'
+StatusDiskon = 'T'
 
 # Meminta input diskon jika jumlah produk >= 12
 if (JumlahProduk >= 12):
@@ -31,7 +31,7 @@ if (JumlahProduk >= 12):
 # Jika ada diskon
 if (StatusDiskon == 'Y'):
     Diskon = int(input('Besar Diskon : '))
-    StatusDiskon = 'Ya'
+    StatusDiskon = 'Y'
 
 # Menentukan harga satuan dan nama barang berdasarkan kode produk
 if (KodeProduk == 'PK01'):
