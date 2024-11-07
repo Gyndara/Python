@@ -1,3 +1,4 @@
+import os
 print('_______________________________________________________')
 print('|_______________KASIIR PENJUALAN KANTIN_______________|')
 print('|__Kode barang__|____Nama Barang___|___Harga Satuan___|')
@@ -21,11 +22,20 @@ else:
 JumlahProduk = int(input('Masukan Jumlah produk : '))
 
 Diskon = 0
-if (JumlahProduk > 12):
-    StatusDsikon = print('Ada Diskon [Y/T] : ')
-if (StatusDsikon == 'Y'):
-    Diskon = int(input('Besar Diskon : '))
+StatusDiskon = 'Tidak'
 
+# Meminta input diskon jika jumlah produk >= 12
+if (JumlahProduk >= 12):
+    StatusDiskon = input('Ada Diskon [Ya/Tidak] : ').upper()
+
+print(StatusDiskon)
+
+# Jika ada diskon
+if (StatusDiskon == 'Y'):
+    Diskon = int(input('Besar Diskon : '))
+    StatusDiskon = 'Ya'
+
+# Menentukan harga satuan dan nama barang berdasarkan kode produk
 if (KodeProduk == 'PK01'):
     NamaBarang = 'Pakaian'
     HargaSatuan = 75000
@@ -41,8 +51,26 @@ else:
             if (KodeProduk == 'AK04'):
                 NamaBarang = 'Aksesoris'
                 HargaSatuan = 45000
+
 HargaTotal = JumlahProduk * HargaSatuan
-BesaranDiskon = Diskon/100 * HargaTotal
+BesaranDiskon = (Diskon / 100) * HargaTotal
 TotalBayar = HargaTotal - BesaranDiskon
 
+Bayar = float(input('Masukan jumlah uang : '))
+UangKembali = Bayar - TotalBayar
 
+os.system('pause')
+os.system('cls')
+
+# Menampilkan detail transaksi
+print('Kode Barang     : ', KodeProduk)
+print('Nama Barang     : ', NamaBarang)
+print('Jumlah Barang   : ', JumlahProduk)
+print('Status Diskon   : ', StatusDiskon)
+print(f'Harga Satuan    :  Rp.{HargaSatuan:,.0f}')
+print(f'Harga Total     :  Rp.{HargaTotal:,.0f}')
+print(f'Diskon {Diskon}%       :  Rp.{BesaranDiskon:,.0f}')  
+print('_____________________________')
+print(f'Total Bayar     :  Rp.{TotalBayar:,.0f}')  
+print(f'Bayar           :  Rp.{Bayar:,.0f}')
+print(f'Uang Kembalian  :  Rp.{UangKembali:,.0f}')
