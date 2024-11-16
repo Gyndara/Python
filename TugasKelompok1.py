@@ -1,10 +1,7 @@
 import os
 
 
-
-
-
-
+#halo andre
 
 UlangiKalkulator = 'Y'
 while(UlangiKalkulator == 'Y'): 
